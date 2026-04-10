@@ -47,36 +47,65 @@ def ensino_medio():
 ensino_medio()
 
 def aprovacao():
-    nota_final = 3
+    nota_final = 8 # COLOCAR CALCULO DE NOTA AQUI
     nota_minima = 5
-    frequencia_final = 7
+    frequencia_final = 85 # COLOCAR CALCULO DE FREQUENCIA AQUI
     frequencia_minima = 5
     if nota_final >= nota_minima and frequencia_final >= frequencia_minima:
-        print("APROVADO")
+        print("SITUAÇÃO DO(A) ALUNO(A): APROVADO")
     elif frequencia_final < frequencia_minima:
-        print("REPROVADO POR FALTA")
+        print("SITUAÇÃO DO(A) ALUNO(A): REPROVADO POR FALTA")
     elif nota_final < nota_minima:
-        print("REPROVADO POR NOTA")
+        print("SITUAÇÃO DO(A) ALUNO(A): REPROVADO POR NOTA")
     elif nota_final < nota_minima and frequencia_final < frequencia_minima:
-        print("REPROVADO POR NOTA E FALTA")
+        print("SITUAÇÃO DO(A) ALUNO(A): REPROVADO POR NOTA E FALTA")
 aprovacao()
+
+# CRIAR OUTRA DEFINIÇÃO DE ESCHOLHA COMO A SEÇÃO "DEFINIÇÃO DE NÍVEL ESCOLAR", PARA O USUÁRIO DECIDIR O QUE QUER VER NA SUA INTERFACE
+
+
+
+
+
+
+
 
 
 
 
 # TELA FINAL DE RESULTADOS
 def resultado_final1():
-    pass
+    print() # Nível da educação básica
+    print() # Nome da(s) disciplina(s)
+    print() # Nota final calculada
+    print() # Total de faltas
+    print() # Percentual de frequência
+    print(aprovacao) # Situação final do estudante.
 resultado_final1()
 
 def resultado_final2():
-    pass
+    print() # Nível da educação básica
+    print() # Nome da(s) disciplina(s)
+    print() # Nota final calculada
+    print() # Total de faltas
+    print() # Percentual de frequência
+    print(aprovacao) # Situação final do estudante.
 resultado_final2()
 
 def resultado_final3():
-    pass
+    print() # Nível da educação básica
+    print() # Nome da(s) disciplina(s)
+    print() # Nota final calculada
+    print() # Total de faltas
+    print() # Percentual de frequência
+    print(aprovacao) # Situação final do estudante.
 resultado_final3()
 
 def resultado_final4():
-    pass
+    print() # Nível da educação básica
+    print() # Nome da(s) disciplina(s)
+    print() # Nota final calculada
+    print() # Total de faltas
+    print() # Percentual de frequência
+    print(aprovacao) # Situação final do estudante.
 resultado_final4()
