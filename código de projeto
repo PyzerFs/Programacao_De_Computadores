@@ -1,0 +1,31 @@
+
+def cadastro_aluno ():
+seila = int(input(Digite um número de 1 a 4: ))
+if seila == 1
+    return
+"""
+1 - Educação infantil
+2 - ensino fundamental I
+3 - ensino fundamental II
+4 - ensino médio
+"""
+
+cadastro_aluno ()
+
+def aprovacao():
+nota_final = 4
+nota_minima = 5
+frequencia_final = 170
+frequencia_minima = 150
+
+if nota_final >= nota_minima and frequencia_final >= frequencia_minima:
+    print("APROVADO")
+elif frequencia_final < frequencia_minima:
+    print("REPROVADO POR FALTA")
+elif nota_final < nota_minima:
+    print("REPROVADO POR NOTA")
+elif nota_final < nota_minima and frequencia_final < frequencia_minima:
+    print("REPROVADO POR NOTA E FALTA")
+aprovacao()
+
+def faltas()
