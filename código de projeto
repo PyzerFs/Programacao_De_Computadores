@@ -73,3 +73,5 @@ print('Sua nota final em biologia é: {}' .format(calculo_biologia))
 print('Sua nota final em biologia é: {}' .format(calculo_fisica))
 print('Sua nota final em química é: {}' .format(calculo_quimica))
 print('Sua nota final em filosofia é: {}' .format(calculo_filosofia))
+
+sou macho gay
