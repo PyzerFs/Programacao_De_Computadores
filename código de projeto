@@ -4,7 +4,7 @@ print('╚═══════════════════════�
 
 
 nome_aluno = input("Digite seu nome completo: ")
-print('Bem-vendo {}! Vamos começar a cadastrar as suas notas, qual materia gostaria de cadastrar primeiro?' .format(nome_aluno))
+print('Bem-vendo {}! Vamos começar a cadastrar as suas notas' .format(nome_aluno))
 
 
 print("Digite abaixo as suas notas de português")
@@ -71,12 +71,43 @@ trabalho_filosofia = float(input('Nota total de presença: '))
 calculo_filosofia = atividade_filosofia + prova_filosofia + trabalho_filosofia
 
 
-print(f"Resultados finais de {nome_aluno}")
-print('Sua nota final em português é: {}' .format(calculo_portugues))
-print('Sua nota final em matemática é: {}' .format(calculo_matematica))
-print('Sua nota final em história é: {}' .format(calculo_historia))
-print('Sua nota final em geografia é: {}' .format(calculo_geografia))
-print('Sua nota final em biologia é: {}' .format(calculo_biologia))
-print('Sua nota final em fisica é: {}' .format(calculo_fisica))
-print('Sua nota final em química é: {}' .format(calculo_quimica))
-print('Sua nota final em filosofia é: {}' .format(calculo_filosofia))
+if calculo_portugues and calculo_matematica and calculo_historia and calculo_geografia and calculo_biologia and calculo_fisica and calculo_quimica and calculo_filosofia / 10 >= 5 and presenca_total >= 200:
+    print('Parabéns ,{}! Você foi aprovado.' .format(nome_aluno))
+    print('Aqui estão as suas notas')
+    print('Sua nota final em português é: {}' .format(calculo_portugues))
+    print('Sua nota final em matemática é: {}' .format(calculo_matematica))
+    print('Sua nota final em história é: {}' .format(calculo_historia))
+    print('Sua nota final em geografia é: {}' .format(calculo_geografia))
+    print('Sua nota final em biologia é: {}' .format(calculo_biologia))
+    print('Sua nota final em fisica é: {}' .format(calculo_fisica))
+    print('Sua nota final em química é: {}' .format(calculo_quimica))
+    print('Sua nota final em filosofia é: {}' .format(calculo_filosofia))
+
+elif calculo_portugues and calculo_matematica and calculo_historia and calculo_geografia and calculo_biologia and calculo_fisica and calculo_quimica and calculo_filosofia / 10 < 5:
+    print('Infelizmente não foi desta vez, {}! você foi reprovado por falta de nota suficiente.' .format(nome_aluno))
+    print('Aqui estão as suas notas')
+    print('Sua nota final em português é: {}' .format(calculo_portugues))
+    print('Sua nota final em matemática é: {}' .format(calculo_matematica))
+    print('Sua nota final em história é: {}' .format(calculo_historia))
+    print('Sua nota final em geografia é: {}' .format(calculo_geografia))
+    print('Sua nota final em biologia é: {}' .format(calculo_biologia))
+    print('Sua nota final em fisica é: {}' .format(calculo_fisica))
+    print('Sua nota final em química é: {}' .format(calculo_quimica))
+    print('Sua nota final em filosofia é: {}' .format(calculo_filosofia))
+
+elif presenca_total < 200:
+    print('Infelizmente não foi desta vez, {}! você foi reprovado por falta de presença suficiente.' .format(nome_aluno))
+    print('Aqui estão as suas notas')
+    print('Sua nota final em português é: {}' .format(calculo_portugues))
+    print('Sua nota final em matemática é: {}' .format(calculo_matematica))
+    print('Sua nota final em história é: {}' .format(calculo_historia))
+    print('Sua nota final em geografia é: {}' .format(calculo_geografia))
+    print('Sua nota final em biologia é: {}' .format(calculo_biologia))
+    print('Sua nota final em fisica é: {}' .format(calculo_fisica))
+    print('Sua nota final em química é: {}' .format(calculo_quimica))
+    print('Sua nota final em filosofia é: {}' .format(calculo_filosofia))
+
+
+
+
+
