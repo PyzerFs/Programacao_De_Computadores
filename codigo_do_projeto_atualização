@@ -1,0 +1,23 @@
+import os
+
+def limpar_tela():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+
+def AlunoNotas():
+    armazenar = {"matematica": 0, "portugues": 0}
+    notas_elementos = []
+    materias = ['Matematica','Portugues']
+    notas_gerais = {}
+    print("Lançar notas")
+    for materias in materias:
+        print(f'Digite suas notas de {materias}')
+        atividade = float(input('Nota total de atividades: '))
+        prova = float(input('Nota total de prova: '))
+        trabalho = float(input('Nota total de presença: '))
+        limpar_tela()
+        nota = atividade + prova + trabalho
+        notas_gerais[materias] = nota
+    print('\n Notas Lançadas')
+    print(notas_gerais)
+AlunoNotas()
