@@ -1,0 +1,37 @@
+import os
+import sys
+
+
+def Painel():
+    print("="*30)
+    print("     SISTEMA DE NOTAS")
+    print("="*30)
+    print("""
+    1 Matematica
+    2 Portugues 
+    3 Geografica 
+    """)
+    
+    print("="*30)
+    
+
+
+def NotasAlunos():
+    os.system("clear")
+    Painel()
+    materias = ["matematica", "portugues"]
+    notas = {}
+    for materias in materias:
+        #sys.stdout.write("\033[4F]")
+        print(f"\n{materias}")
+        notas_entrada = float(input("Prova: "))
+        notas_teste = float(input("Prova: "))
+        notas_presenc = float(input("Prova: "))
+        os.system("clear")
+        Painel()
+        
+
+        notas[materias] = notas_entrada, notas_teste, notas_presenc
+
+NotasAlunos()
+        
