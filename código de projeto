@@ -1,84 +1,113 @@
-# DEFINIÇÃO DE NÍVEL ESCOLAR
-import time 
+print('╔═══════════════════════════════╗')
+print('║    SISTEMA MARIA CONCEIÇÃO    ║')
+print('╚═══════════════════════════════╝')
 
-def cadastro_aluno():
-    print('1 - Educação infantil')
-    time.sleep(0.5)
-    print('2 - Ensino fundamental I')
-    time.sleep(0.5)
-    print('3 - Ensino fundamental II')
-    time.sleep(0.5)
-    print('4 - Ensino médio')
-    time.sleep(0.5)
-    nivel_graduacao = int(input('Digite o número referente ao seu nível de graduação: '))
-    if nivel_graduacao == 1:
-        print('Entrando em educação infantil') 
-        time.sleep(0.5)
-        return educação_infantil
-    elif nivel_graduacao == 2:
-        print('Entrando em ensino fundamental_1')
-        time.sleep(0.5)
-        return ensino_fundamental_1
-    elif nivel_graduacao == 3:
-        print('Entrando em ensino fundamental 2')
-        time.sleep(0.5)
-        return ensino_fundamental_2
-    elif nivel_graduacao == 4:
-        print('Entrando em ensino medio')
-        time.sleep(0.5)
-        return ensino_medio
-cadastro_aluno()
 
-# INÍCIO DO CADASTRO DE DADOS PARA CADA NÍVEL ESCOLAR
-def educação_infantil():
-    print() # Nível da educação básica
-    print() # Nome da(s) disciplina(s)
-    print() # Nota final calculada
-    print() # Total de faltas
-    print() # Percentual de frequência
-    print() # Situação final do estudante.
-educação_infantil()
+nome_aluno = input("Digite seu nome completo: ")
+print('Bem-vendo {}! Vamos começar a cadastrar as suas notas' .format(nome_aluno))
 
-def ensino_fundamental_1():
-    print() # Nível da educação básica
-    print() # Nome da(s) disciplina(s)
-    print() # Nota final calculada
-    print() # Total de faltas
-    print() # Percentual de frequência
-    print() # Situação final do estudante.
-ensino_fundamental_1()
 
-def ensino_fundamental_2():
-    print() # Nível da educação básica
-    print() # Nome da(s) disciplina(s)
-    print() # Nota final calculada
-    print() # Total de faltas
-    print() # Percentual de frequência
-    print() # Situação final do estudante.
-ensino_fundamental_2()
+print("Digite abaixo as suas notas de português")
+atividade_portugues = float(input('Nota total de atividades: '))
+prova_portugues = float(input('Nota total de prova: '))
+trabalho_portugues = float(input('Nota total de presença: '))
 
-def ensino_medio():
-    print() # Nível da educação básica
-    print() # Nome da(s) disciplina(s)
-    print() # Nota final calculada
-    print() # Total de faltas
-    print() # Percentual de frequência
-    print() # Situação final do estudante.
-ensino_medio()
+calculo_portugues = atividade_portugues + prova_portugues + trabalho_portugues
 
-def aprovacao():
-    nota_final = 8 # COLOCAR CALCULO DE NOTA AQUI
-    nota_minima = 5
-    frequencia_final = 85 # COLOCAR CALCULO DE FREQUENCIA AQUI
-    frequencia_minima = 5
-    if nota_final >= nota_minima and frequencia_final >= frequencia_minima:
-        print("SITUAÇÃO DO(A) ALUNO(A): APROVADO")
-    elif frequencia_final < frequencia_minima:
-        print("SITUAÇÃO DO(A) ALUNO(A): REPROVADO POR FALTA")
-    elif nota_final < nota_minima:
-        print("SITUAÇÃO DO(A) ALUNO(A): REPROVADO POR NOTA")
-    elif nota_final < nota_minima and frequencia_final < frequencia_minima:
-        print("SITUAÇÃO DO(A) ALUNO(A): REPROVADO POR NOTA E FALTA")
-aprovacao()
 
-# CRIAR OUTRA DEFINIÇÃO DE ESCHOLHA COMO A SEÇÃO "DEFINIÇÃO DE NÍVEL ESCOLAR", PARA O USUÁRIO DECIDIR O QUE QUER VER NA SUA INTERFACE
+print("Digite abaixo as suas notas de matemática")
+atividade_matematica = float(input('Nota total de atividades: '))
+prova_matematica = float(input('Nota total de prova: '))
+trabalho_matematica = float(input('Nota total de presença: '))
+
+calculo_matematica = atividade_matematica + prova_matematica + trabalho_matematica
+
+
+print("Digite abaixo as suas notas de história") 
+atividade_historia = float(input('Nota total de atividades: '))
+prova_historia = float(input('Nota total de prova: '))
+trabalho_historia = float(input('Nota total de presença: '))
+
+calculo_historia = atividade_historia + prova_historia + trabalho_historia
+
+
+print("Digite abaixo as suas notas de geografia")
+atividade_geografia = float(input('Nota total de atividades: '))
+prova_geografia = float(input('Nota total de prova: '))
+trabalho_geografia = float(input('Nota total de presença: '))
+
+calculo_geografia = atividade_geografia + prova_geografia + trabalho_geografia
+
+
+print("Digite abaixo as suas notas de biologia")
+atividade_biologia = float(input('Nota total de atividades: '))
+prova_biologia = float(input('Nota total de prova: '))
+trabalho_biologia = float(input('Nota total de presença: '))
+
+calculo_biologia = atividade_biologia + prova_biologia + trabalho_biologia
+
+
+print("Digite abaixo as suas notas de física")
+atividade_fisica = float(input('Nota total de atividades: '))
+prova_fisica = float(input('Nota total de prova: '))
+trabalho_fisica = float(input('Nota total de presença: '))
+
+calculo_fisica = atividade_fisica + prova_fisica + trabalho_fisica
+
+
+print("Digite abaixo as suas notas de química") 
+atividade_quimica = float(input('Nota total de atividades: '))
+prova_quimica = float(input('Nota total de prova: '))
+trabalho_quimica = float(input('Nota total de presença: '))
+
+calculo_quimica = atividade_quimica + prova_quimica + trabalho_quimica
+
+
+print("Digite abaixo as suas notas de filosofia")
+atividade_filosofia = float(input('Nota total de atividades: '))
+prova_filosofia = float(input('Nota total de prova: '))
+trabalho_filosofia = float(input('Nota total de presença: '))
+
+calculo_filosofia = atividade_filosofia + prova_filosofia + trabalho_filosofia
+
+
+if calculo_portugues and calculo_matematica and calculo_historia and calculo_geografia and calculo_biologia and calculo_fisica and calculo_quimica and calculo_filosofia / 10 >= 5 and presenca_total >= 200:
+    print('Parabéns ,{}! Você foi aprovado.' .format(nome_aluno))
+    print('Aqui estão as suas notas')
+    print('Sua nota final em português é: {}' .format(calculo_portugues))
+    print('Sua nota final em matemática é: {}' .format(calculo_matematica))
+    print('Sua nota final em história é: {}' .format(calculo_historia))
+    print('Sua nota final em geografia é: {}' .format(calculo_geografia))
+    print('Sua nota final em biologia é: {}' .format(calculo_biologia))
+    print('Sua nota final em fisica é: {}' .format(calculo_fisica))
+    print('Sua nota final em química é: {}' .format(calculo_quimica))
+    print('Sua nota final em filosofia é: {}' .format(calculo_filosofia))
+
+elif calculo_portugues and calculo_matematica and calculo_historia and calculo_geografia and calculo_biologia and calculo_fisica and calculo_quimica and calculo_filosofia / 10 < 5:
+    print('Infelizmente não foi desta vez, {}! você foi reprovado por falta de nota suficiente.' .format(nome_aluno))
+    print('Aqui estão as suas notas')
+    print('Sua nota final em português é: {}' .format(calculo_portugues))
+    print('Sua nota final em matemática é: {}' .format(calculo_matematica))
+    print('Sua nota final em história é: {}' .format(calculo_historia))
+    print('Sua nota final em geografia é: {}' .format(calculo_geografia))
+    print('Sua nota final em biologia é: {}' .format(calculo_biologia))
+    print('Sua nota final em fisica é: {}' .format(calculo_fisica))
+    print('Sua nota final em química é: {}' .format(calculo_quimica))
+    print('Sua nota final em filosofia é: {}' .format(calculo_filosofia))
+
+elif presenca_total < 200:
+    print('Infelizmente não foi desta vez, {}! você foi reprovado por falta de presença suficiente.' .format(nome_aluno))
+    print('Aqui estão as suas notas')
+    print('Sua nota final em português é: {}' .format(calculo_portugues))
+    print('Sua nota final em matemática é: {}' .format(calculo_matematica))
+    print('Sua nota final em história é: {}' .format(calculo_historia))
+    print('Sua nota final em geografia é: {}' .format(calculo_geografia))
+    print('Sua nota final em biologia é: {}' .format(calculo_biologia))
+    print('Sua nota final em fisica é: {}' .format(calculo_fisica))
+    print('Sua nota final em química é: {}' .format(calculo_quimica))
+    print('Sua nota final em filosofia é: {}' .format(calculo_filosofia))
+
+
+
+
+
